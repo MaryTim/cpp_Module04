@@ -12,11 +12,9 @@ public:
     Cat& operator=(const Cat& other);
     ~Cat();
 
-    std::string getType() const;
     void makeSound() const;
 
 private:
-    std::string type_;
     Brain *brain;
 };
 

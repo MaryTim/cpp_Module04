@@ -12,7 +12,7 @@ public:
     virtual std::string getType() const;
 
     virtual void makeSound() const;
-private:
+protected:
     std::string type_;
 };
 

@@ -10,8 +10,6 @@ public:
     Brain& operator=(const Brain& other);
     ~Brain();
 
-    
-
 private:
     std::string ideas[100];
 };

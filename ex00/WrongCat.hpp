@@ -10,11 +10,6 @@ public:
     WrongCat(const WrongCat& other);
     WrongCat& operator=(const WrongCat& other);
     ~WrongCat();
-
-    std::string getType() const;
-
-private:
-    std::string type_;
 };
 
 #endif

@@ -1,6 +1,7 @@
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat() : WrongAnimal(), type_("WrongCat") {
+WrongCat::WrongCat() : WrongAnimal() {
+    type_ = "Wrong Cat";
     std::cout << "WrongCat has been initialized with type " << type_ << std::endl;
 }
 
@@ -15,10 +16,6 @@ WrongCat &WrongCat::operator=(const WrongCat &other) {
 		this->type_ = other.type_;
 	}
 	return *this;
-}
-
-std::string WrongCat::getType() const {
-    return type_;
 }
 
 WrongCat::~WrongCat() {

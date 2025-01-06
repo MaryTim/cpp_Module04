@@ -12,11 +12,9 @@ public:
     Dog& operator=(const Dog& other);
     ~Dog();
 
-    std::string getType() const;
     void makeSound() const;
 
 private:
-    std::string type_;
     Brain *brain;
 };
 

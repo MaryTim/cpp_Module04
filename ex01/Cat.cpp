@@ -1,6 +1,7 @@
 #include "Cat.hpp"
 
-Cat::Cat() : Animal(), type_("Cat") {
+Cat::Cat() : Animal() {
+    type_ = "Cat";
     brain = new Brain();
     std::cout << "Cat has been initialized with type " << type_ << std::endl;
 }
@@ -16,10 +17,6 @@ Cat &Cat::operator=(const Cat &other) {
 		this->type_ = other.type_;
 	}
 	return *this;
-}
-
-std::string Cat::getType() const {
-    return type_;
 }
 
 void Cat::makeSound() const {
